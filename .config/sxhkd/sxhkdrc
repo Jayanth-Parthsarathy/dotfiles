@@ -6,7 +6,8 @@ super + shift +  s
     maim | tee ~/pix/ss/$(date +%s).png | xclip -selection clipboard -t image/png
 super + w
      $HOME/.local/bin/wifi_prompt
-
+super + shift + x 
+    slock
 super + d
      daymode
 super + n
