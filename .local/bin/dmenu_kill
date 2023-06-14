@@ -1,0 +1,10 @@
+#!/bin/bash
+pid=''
+pid=$(ps -u $USER -o pid,%mem,%cpu,comm | sort  -b -k2 -r | sed -n '1!p' | dmenu -i -l 15 | awk '{print $pid}')
+if [ $pid=='' ]; then
+  notify " No process specified"
+else
+  kill -15 $pid
+  notify " Killed process"
+fi
+
