@@ -1,2 +1,2 @@
 notify-send "$1"
-paplay $HOME/music/not.mp3
+paplay $HOME/Music/not.mp3

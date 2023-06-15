@@ -28,13 +28,13 @@ if [ -f "$usermodmap" ]; then
 fi
 
 # start some nice programs
-feh --bg-scale  ~/pix/wal.jpg
+feh --bg-scale  ~/Pictures/wal.jpg
 picom --experimental-backends --config ~/.config/picom/picom.conf & 
 dwmblocks &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
 /usr/bin/pipewire &
 /usr/bin/pipewire-pulse &
-/usr/bin/pipewire-media-session &
+/usr/bin/wireplumber &
 
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do

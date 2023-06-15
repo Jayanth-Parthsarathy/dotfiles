@@ -33,7 +33,7 @@ case $choice in
 	break
 	;;
     2)
-	wget -P ~/dl $cbtext &&
+	wget -P ~/Downloads $cbtext &&
 	    notify "Downloading File" ||
 		spell_failed
 	break
